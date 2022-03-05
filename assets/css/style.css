@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #4A0BFF;
+    --secondary-color: #FF41A8; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+span.text-logo {
+    font-weight: bold;
+}
+span.text-you-logo {
+    color: var(--primary-color);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* header start */
+
+.hero-wrapper {
+    background: url(../images/hero.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 130vh;
+    margin-top: -10vh;
+}
+
+nav {
+    background-color: rgba(255, 255, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+nav .nav-title{
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+}
+
+nav .nav-title span {
+    color: var(--primary-color);
+}
+
+nav .nav-menu ul {
+    gap: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .nav-menu ul li a{
+    color: black;
+    font-size: .9em;
+    font-weight: 500;
+}
+
+nav .nav-menu ul li a:hover {
+    color: var(--primary-color);
+    text-shadow: var(--primary-color) 0px 1px 10px;
+}
+
+nav .menu-toggle {
+    display: none;
+}
+
+.hero {
+    height: 100vh;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero .hero-left{
+    flex-basis:55%;
+}
+
+h2.hero-greeting {
+    color: var(--secondary-color);
+    margin: 6rem 0rem 1.5rem;
+    font-weight: 600;
+}
+
+h1.hero-tagline {
+    font-weight: bolder;
+    font-size: 2.5em;
+    margin-left: 0;
+}
+
+p.hero-description {
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.hero-button {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.hero-button button {
+    padding: .75rem 3rem;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-button button.register{
+    margin-right: 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+.hero-button button.register:hover {
+    box-shadow: var(--primary-color) 0px 0px 10px;
+}
+
+.hero-button button.login {
+    background-color: transparent;
+    border: var(--primary-color) 1.5px solid;
+    color: var(--primary-color);
+}
+
+.hero-button button.login:hover {
+    box-shadow: var(--primary-color) 0px 0px 10px;
+}
+
+.hero-right {
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero-right img{
+    width: 70%;
+}
+
+/* Header End */
+
+
+/* About Start */
+
+.about {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-images {
+    flex-basis: 20%;
+}
+
+.about .about-description {
+    flex-basis: 45%;
+}
+
+.about .about-description h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about .about-description p {
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 1em;
+    text-align: justify;
+}
+
+
+/* About End  */
+
+/* Benefit Start  */
+
+.benefit {
+    background: url(../images/Group5.png);
+    background-size: cover;
+    background-position-x: center;
+    padding-bottom: 70vh;
+    margin-top: -10vh;
+    padding-top: 10vh;
+}
+
+.benefit-article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefit-title {
+    font-size: 1.5em;
+    margin-top: 40vh;
+    text-align: center;
+}
+
+.benefit-description {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.benefit-cards {
+    margin-top: 10vh;
+    display: flex;
+    gap: 5%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.benefit-card {
+    box-shadow: 0 0 5px 1px;
+    background-color: white;
+    border-radius: 5px;
+    flex-basis: 25%;
+}
+
+.benefit-card:hover {
+    box-shadow: 0 0 20px 2px;
+}
+
+.benefit-card img {
+    width: 100%;
+}
+
+.benefit-card .card-title{
+    padding-left: 20px;
+    text-align: left;
+}
+
+.benefit-card .card-description {
+    text-align: left;
+    padding: 10px 20px 20px;
+}
+
+/* Benefit End  */
+
+/* Contact Start  */
+
+.contact {
+    display: flex;
+    z-index: 1;
+    border: 1px solid grey;
+    background-color: #E3D9FF;
+}
+
+.contact-article {
+    flex-basis: 50%;
+    background-color: #E3D9FF;
+    padding: 20px;
+}
+
+.contact-card {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-title {
+    font-size: 2.5em;
+    padding-top: 50px;
+    color: var(--primary-color);
+}
+
+.contact-logo {
+    margin-top: 4vw;
+    display: flex;
+    border-bottom: 9px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+
+.contact-logo li {
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 2em;
+}
+
+.contact-logo li a .bx{
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.contact-logo li a .bx:hover {
+    background-color: white;
+}
+
+.contact-logo li a .bxl-instagram:hover {
+    color: var(--secondary-color);
+}
+.contact-logo li a .bxl-facebook:hover {
+    color: var(--primary-color);
+}
+.contact-logo li a .bxl-twitter:hover {
+    color: aqua;
+}
+.contact-logo li a .bxl-gmail:hover {
+    color: red;
+}
+
+.contact-phone {
+    margin-top: 5vw;
+    letter-spacing: .2em;
+    font-size: 1.5em;
+}
+
+.profile {
+    flex-basis: 50%;
+    background-color: white;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 100%;
+    text-align: center;
+}
+
+
+.profile-desc {
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: .9em;
+    text-align: left;
+    font-weight: 600;
+    color: grey;
+    width: 90%;
+}
+
+/* Contact End  */
+
+/* Footer Start */
+
+footer {
+    z-index: -1;
+    background-color: #4A0BFF;
+    margin-top: -100px;
+    width: 100%;
+    padding-top: 100px;
+    border-top: 1px solid grey;
+}
+
+footer p{
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer End  */
+
+

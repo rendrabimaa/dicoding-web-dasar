@@ -1,0 +1,206 @@
+@media screen and (max-width: 768px) {
+    nav .nav-title {
+        font-size: 1.25em;
+    }
+
+    nav .nav-menu {
+        position: absolute;
+        z-index: 100;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        display: block;
+        background-color: rgba(255, 255, 255, .9);
+        padding: 20px 0 20px;
+        border-radius: 10px;
+        clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+        transition: .5s ease-in-out;
+    }
+
+    nav .nav-menu.active {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+
+    nav .nav-menu ul {
+        flex-direction: column;
+    }
+
+    nav .menu-toggle {
+        display: initial;
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        transition: .5s;
+    }
+
+    nav .menu-toggle.bx-x {
+        transform: rotate(180deg);
+        transition: .5s;
+    }
+
+    .hero .hero-left {
+        flex-basis: 60%;
+    }
+
+    .hero .hero-right {
+        flex-basis: 40%;
+    }
+
+    h2.hero-greeting {
+        font-size: 1em;
+    }
+
+    h1.hero-tagline {
+        font-size: 2em;
+    }
+
+    p.hero-description {
+        font-size: .8rem;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+    
+    .about .about-images img {
+        width: 60vh;
+        margin-bottom: 5vw;
+    }
+
+    .about .about-description p,h1 {
+        width: 90%;
+        margin: 0 auto ;
+    }
+
+    .about .about-description h1 {
+        font-size: 2em;
+    }
+
+    .about .about-description p {
+        font-size: 1em;
+    }
+
+    .benefit-title {
+        margin-top: 60vh;
+    }
+
+    .benefit-cards {
+        flex-wrap: wrap;
+        gap: 5%;
+        justify-content: space-evenly;
+    }
+
+    .benefit-card {
+        flex-basis: 40%;
+        margin-bottom: 20px;
+
+    }
+
+    .contact {
+        margin-top: -30vh;
+    }
+
+    .contact-title {
+        font-size: 2em;
+    }
+
+    .contact-phone{
+        letter-spacing: normal;
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width:612px) {
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero-right img{
+        display: none;
+    }
+    .hero-right{
+        height: 0;
+        width: 0;
+        position: absolute;
+        display: none;
+        visibility: hidden;
+    }
+    h2.hero-greeting {
+        margin-top: -18vh;
+    }
+
+    .about {
+        margin-top: 0;
+    }
+
+    .contact-phone {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width:472px) {
+
+    h2.hero-greeting {
+        text-align: center;
+        display: block;
+    }
+
+    h1.hero-tagline {
+        width: fit-content;
+        margin: auto;
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    p.hero-description {
+        text-align: center;
+    }
+
+    .hero-button {
+        margin: 10vh auto;
+        width: fit-content;
+    }
+
+    .about {
+        height: 150vh;
+        padding-bottom: 50vh;
+    }
+    .benefit {
+        margin-top: -60vh;
+        height: fit-content;
+        padding-bottom: 50vh;
+        padding-top: 30vh;
+    }
+
+    .benefit-article {
+        height: fit-content;
+    }
+
+    .benefit-description {
+        display: none;
+        visibility: none;
+    }
+    .benefit-cards {
+        flex-direction: column;
+
+    }
+
+    .benefit-card {
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 80%;
+    }
+
+    .contact {
+        margin-top: 1vh;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:396px) {
+    h1.hero-tagline {
+        font-size: 1.2em;
+    }
+}
